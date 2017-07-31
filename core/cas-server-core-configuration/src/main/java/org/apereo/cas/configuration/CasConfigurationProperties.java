@@ -54,129 +54,255 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
 @ConfigurationProperties(value = "cas")
 public class CasConfigurationProperties {
 
+    /**
+     * Consent related properties.
+     */
     @NestedConfigurationProperty
     private ConsentProperties consent = new ConsentProperties();
 
+    /**
+     * Scim related properties.
+     */
     @NestedConfigurationProperty
     private ScimProperties scim = new ScimProperties();
 
+    /**
+     * Authentication related properties.
+     */
     @NestedConfigurationProperty
     private AuthenticationProperties authn = new AuthenticationProperties();
 
+    /**
+     * Audit related properties.
+     */
     @NestedConfigurationProperty
     private AuditProperties audit = new AuditProperties();
 
+    /**
+     * Audit related properties.
+     */
     @NestedConfigurationProperty
     private HttpClientProperties httpClient = new HttpClientProperties();
 
+    /**
+     * Person directory related properties.
+     */
     @NestedConfigurationProperty
     private PersonDirPrincipalResolverProperties personDirectory = new PersonDirPrincipalResolverProperties();
 
+    /**
+     * CAS events related properties.
+     */
     @NestedConfigurationProperty
     private EventsProperties events = new EventsProperties();
 
+    /**
+     * Host related properties.
+     */
     @NestedConfigurationProperty
     private HostProperties host = new HostProperties();
 
+    /**
+     * Logout related properties.
+     */
     @NestedConfigurationProperty
     private LogoutProperties logout = new LogoutProperties();
 
+    /**
+     * Metrics related properties.
+     */
     @NestedConfigurationProperty
     private MetricsProperties metrics = new MetricsProperties();
 
+    /**
+     * Monitor related properties.
+     */
     @NestedConfigurationProperty
     private MonitorProperties monitor = new MonitorProperties();
 
+    /**
+     * REST related properties.
+     */
     @NestedConfigurationProperty
     private RestProperties rest = new RestProperties();
 
+    /**
+     * HTTP server related properties.
+     */
     @NestedConfigurationProperty
     private CasServerProperties server = new CasServerProperties();
 
+    /**
+     * Service Registry related properties.
+     */
     @NestedConfigurationProperty
     private ServiceRegistryProperties serviceRegistry = new ServiceRegistryProperties();
 
+    /**
+     * Single logout related properties.
+     */
     @NestedConfigurationProperty
     private SloProperties slo = new SloProperties();
 
+    /**
+     * Single Sign On related properties.
+     */
     @NestedConfigurationProperty
     private SsoProperties sso = new SsoProperties();
 
+    /**
+     * Tickets related properties.
+     */
     @NestedConfigurationProperty
     private TicketProperties ticket = new TicketProperties();
 
+    /**
+     * Message bundle and internationalization related properties.
+     */
     @NestedConfigurationProperty
     private MessageBundleProperties messageBundle = new MessageBundleProperties();
 
+    /**
+     * Admin pages related properties.
+     */
     @NestedConfigurationProperty
     private AdminPagesSecurityProperties adminPagesSecurity = new AdminPagesSecurityProperties();
 
+    /**
+     * HTTP web requests related properties.
+     */
     @NestedConfigurationProperty
     private HttpWebRequestProperties httpWebRequest = new HttpWebRequestProperties();
 
+    /**
+     * CAS view layer related properties related properties.
+     */
     @NestedConfigurationProperty
     private ViewProperties view = new ViewProperties();
 
+    /**
+     * Google analytics related properties.
+     */
     @NestedConfigurationProperty
     private GoogleAnalyticsProperties googleAnalytics = new GoogleAnalyticsProperties();
 
+    /**
+     * Google recaptcha related properties.
+     */
     @NestedConfigurationProperty
     private GoogleRecaptchaProperties googleRecaptcha = new GoogleRecaptchaProperties();
 
+    /**
+     * Twillio related properties.
+     */
     @NestedConfigurationProperty
     private TwillioProperties twillio = new TwillioProperties();
 
+    /**
+     * Text magic related properties.
+     */
     @NestedConfigurationProperty
     private TextMagicProperties textMagic = new TextMagicProperties();
 
+    /**
+     * Clickatell related properties.
+     */
     @NestedConfigurationProperty
     private ClickatellProperties clickatell = new ClickatellProperties();
 
+    /**
+     * Acceptable usage policy related properties.
+     */
     @NestedConfigurationProperty
     private AcceptableUsagePolicyProperties acceptableUsagePolicy = new AcceptableUsagePolicyProperties();
 
+    /**
+     * Clearpass related properties.
+     */
     @NestedConfigurationProperty
     private ClearpassProperties clearpass = new ClearpassProperties();
 
+    /**
+     * Ticket Granting Ticket Cookie related properties.
+     */
     @NestedConfigurationProperty
     private TicketGrantingCookieProperties tgc = new TicketGrantingCookieProperties();
 
+    /**
+     * Warning Cookie related properties.
+     */
     @NestedConfigurationProperty
     private WarningCookieProperties warningCookie = new WarningCookieProperties();
 
+    /**
+     * SAML SP related properties.
+     */
     @NestedConfigurationProperty
     private SamlServiceProviderProperties samlSp = new SamlServiceProviderProperties();
 
+    /**
+     * Maxmind related properties.
+     */
     @NestedConfigurationProperty
     private MaxmindProperties maxmind = new MaxmindProperties();
 
+    /**
+     * Google maps related properties.
+     */
     @NestedConfigurationProperty
     private GoogleMapsProperties googleMaps = new GoogleMapsProperties();
 
+    /**
+     * JDBC related properties.
+     */
     @NestedConfigurationProperty
     private DatabaseProperties jdbc = new DatabaseProperties();
 
+    /**
+     * Google apps related properties.
+     */
     @NestedConfigurationProperty
     private GoogleAppsProperties googleApps = new GoogleAppsProperties();
 
+    /**
+     * SAML MDUI related properties.
+     */
     @NestedConfigurationProperty
     private SamlMetadataUIProperties samlMetadataUi = new SamlMetadataUIProperties();
 
+    /**
+     * SAML core related properties.
+     */
     @NestedConfigurationProperty
     private SamlCoreProperties samlCore = new SamlCoreProperties();
 
+    /**
+     * Shibboleth attribute resolver related properties.
+     */
     @NestedConfigurationProperty
     private ShibbolethAttributeResolverProperties shibAttributeResolver = new ShibbolethAttributeResolverProperties();
 
+    /**
+     * UI theme related properties.
+     */
     @NestedConfigurationProperty
     private ThemeProperties theme = new ThemeProperties();
 
+    /**
+     * Locale related properties.
+     */
     @NestedConfigurationProperty
     private LocaleProperties locale = new LocaleProperties();
 
+    /**
+     * Management web application  related properties.
+     */
     @NestedConfigurationProperty
     private ManagementWebappProperties mgmt = new ManagementWebappProperties();
 
+    /**
+     * Spring Webflow related properties.
+     */
     @NestedConfigurationProperty
     private WebflowProperties webflow = new WebflowProperties();
 

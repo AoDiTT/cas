@@ -52,14 +52,17 @@ public class ViewProperties implements Serializable {
 
     public static class Cas2 implements Serializable {
         private static final long serialVersionUID = -7954879759474698003L;
+
         /**
          * The relative location of the CAS2 success view bean.
          */
         private String success = "protocol/2.0/casServiceValidationSuccess";
+
         /**
          * The relative location of the CAS3 failure view bean.
          */
         private String failure = "protocol/2.0/casServiceValidationFailure";
+
         /**
          * Whether v2 protocol support should be forward compatible
          * to act like v3 and match its response, mainly for attribute release.
